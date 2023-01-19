@@ -1,0 +1,26 @@
+body {
+    height: 100vh;
+    margin: 0;
+    background-color: #dd2020;
+    font-family: system-ui,sans-serif;
+    font-size: 18px;
+    color: white;
+}
+
+#container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
