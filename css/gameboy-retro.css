@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    font-family: system-ui,sans-serif;
+    font-size: 18px;
+}
+
+h1 {
+    text-decoration: overline;
+}
+
+ul {
+    list-style-type: square;
+}
+
+.stdLink {
+    color: #efc6b4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.stdLink:hover {
+    text-decoration: underline;
+}
+
+/* Contenedor global de la página */
+#container {
+    display: flex;
+    height: 100vh;
+    background-color: black;
+}
+
+/* Sección para la información de la consola  */
+#console-inf {
+    width: 40vw;
+    background-color: #0d3648;
+    border-right: 5px solid #214859;
+    color: #efc6b4;
+    padding: 20px 40px;
+}
+
+/* Sección para el diseño e imagen de la consola */
+#console-img {
+    width: 60vw;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#console-ly-1 {
+    width: 25vw;
+    height: 80vh;
+    background-color: grey;
+    border: 2px solid black;
+    border-radius: 20px 20px 90px 20px;
+    padding: 20px;
+}
