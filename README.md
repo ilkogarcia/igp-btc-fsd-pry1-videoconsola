@@ -6,21 +6,21 @@ Aplicación web que emula el aspecto visual de la consola de video juegos **Nomb
 URL: https://ilkogarcia.github.io/igp-btc-fsd-pry1-videoconsola/
 
 ## Table of Contents
-1. [Información general](#general-info)
-2. [Tecnologías](#technologies)
-3. [Instalación](#installation)
+1. [Información general](#info)
+2. [Tecnologías](#tech)
+3. [Instalación](#install)
 
-## Información general
+## <a name="info"></a>Información general
 Algunos de los retos a los que nos hemos enfrentado durante el desarrollo de la aplicación han sido:.... En el futuro se pretende agregar otras funcionalidades como son:...
 
 ``Este proyecto se ha levado a cabo dentro del marco del Bootcamp FullStack Developer realizado en Valencia, entre enero y marzo de 2023.``
 
-## Technologías
+## <a name="tech"></a>Technologías
 Las tecnologías utilizadas en el desarrollo de la aplicación son:
 * [HTML5](https://developer.mozilla.org/en-US/docs/Glossary/HTML5)
 * [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
 
-## Instalación
+## <a name="install"></a>Instalación
 Para descargar el proyecto en tu entorno de desarrollo sigue las instrucciones siguientes:
 
 ```
