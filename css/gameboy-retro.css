@@ -23,15 +23,15 @@ ul {
 }
 
 /* Contenedor global de la página */
-#container {
-    display: flex;
+.container {
     height: 100vh;
-    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
 }
 
 /* Sección para la información de la consola  */
-#console-inf {
-    width: 40vw;
+.leftpanel {
+    grid-column: 1 / 2;
     background-color: #0d3648;
     border-right: 5px solid #214859;
     color: #efc6b4;
@@ -39,8 +39,8 @@ ul {
 }
 
 /* Sección para el diseño e imagen de la consola */
-#console-img {
-    width: 60vw;
+.rightpanel {
+    grid-column: 2 / 3;
     background-color: whitesmoke;
     display: flex;
     justify-content: center;
