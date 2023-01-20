@@ -4,7 +4,7 @@ body {
     background-color: #dd2020;
     font-family: system-ui,sans-serif;
     font-size: 18px;
-    color: white;
+    color: #ffffff;
 }
 
 #container {
@@ -16,7 +16,7 @@ body {
 }
 
 a {
-    color: white;
+    color: #ffffff;
     text-decoration: none;
     font-weight: bold;
 }

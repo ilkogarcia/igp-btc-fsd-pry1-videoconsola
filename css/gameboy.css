@@ -1,0 +1,150 @@
+@font-face {
+    font-family: nintendoFont;
+    src: url(../assets/Pretendo.ttf);
+  }
+
+  /* Contenedor global de la consola */
+#console {
+    width: 27vw;
+    height: 90vh;
+    background-color: #e1e1e1;
+    border-radius: 20px 20px 90px 20px;
+    box-shadow: inset 0 5px 8px rgba(0,0,0,0.16), 0 4px 6px rgba(0,0,0,0.45);
+}
+
+/* Parte superior donde se encuentra el botón de encendido */
+#console-ly-0-1 {
+    /* border: 1px solid #ff0000; */
+    height: 5vh;
+}
+
+/* Contenedor para la pantalla de la consola */
+#console-ly-0-2 {
+    /* border: 1px solid #ff0000; */
+    height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+/* Borde exterior de la pantalla */
+#console-screen {
+    width: 24vw;
+    height: 34vh;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    background: rgb(160,152,175);
+    background: linear-gradient(90deg, rgba(160,152,175,1) 0%, rgba(126,119,141,1) 50%, rgba(160,152,175,1) 100%);
+    border-radius: 20px 20px 90px 20px;
+    box-shadow: inset 0px 0px 5px 1px #333333;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+/* Zona superior de la pantalla */
+#screen-top {
+    /* border: 1px solid #ff0000; */
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+
+}
+
+/* Estilos para dibujar las líneas de colores en la parte superior */
+.line-1 {
+    width: 120px;
+    border-top: 3px solid #7a2f61;
+    padding-top: 2px;
+    border-bottom: 3px solid #231a84;
+    padding-bottom: 2px;
+}
+
+.line-2 {
+    width: 50px;
+    border-top: 3px solid #7a2f61;
+    padding-top: 2px;
+    border-bottom: 3px solid #231a84;
+    padding-bottom: 2px;
+}
+
+/* Zona del led indicador de bateria */
+#screen-left{
+    /* border: 1px solid #ff0000; */
+    width: 65px;
+    height: 200px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+}
+
+.led-box {
+    height: 30px;
+}
+
+.led-box p {
+    font-size: 10px;
+    text-align: center;
+}
+
+.led-ON {
+    margin: 0 auto;
+    width: 18px;
+    height: 18px;
+    background-color: #ABFF00;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #304701 0 -1px 9px, #89FF00 0 2px 12px;
+}
+
+/* Zona del cristal verde */
+#screen-right {
+    /* border: 1px solid #ff0000; */
+    width: 240px;
+    height: 200px;
+    background: rgb(94,140,70);
+    background: radial-gradient(circle, rgba(94,140,70,1) 0%, rgba(125,180,82,1) 93%, rgba(94,140,70,1) 100%);
+    box-shadow: inset -2px 2px 8px 6px rgba(0,0,0,0.68);
+    float: left;
+}
+
+/* Contenedor para la marca y modelo de la consola */
+#console-ly-0-3 {
+    /* border: 1px solid #ff0000; */
+    height: 4vh;
+    display: flex;
+    align-items: baseline;
+    justify-content: left;
+    padding-left: 25px;
+}
+
+/* Marca o logotipo */
+#console-brand {
+    font-family: nintendoFont;
+    letter-spacing: 1px;
+    color: #231a84;
+}
+
+/* Nombre del modelo */
+#console-modelname {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 28px;
+    font-style: oblique;
+    color: #231a84;
+    padding-left: 2px;
+}
+
+/* Contenedor para los controles principales */
+#console-ly-0-4 {
+    /* border: 1px solid red; */
+    height: 25vh;
+}
+
+/* Contenedor para los elementos de la parte inferior */
+#console-ly-0-5 {
+    /* border: 1px solid red; */
+    height: 20vh;
+}
