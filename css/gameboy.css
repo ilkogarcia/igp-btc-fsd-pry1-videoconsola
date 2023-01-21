@@ -1,7 +1,6 @@
 /**
  * 01. CONTENEDORES PRINCIPALES
- * Incluye el contenedor principal de la consola y
- * los contenedores horiontales en que se divide.
+ * Incluye el contenedor principal y divisiones horizontales.
  * -------------------------------------------------------------------
  */
 
@@ -43,36 +42,49 @@
 #console-ctn-4 {
     /* border: 1px solid red; */
     height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 10px;
 }
 
-/* Contenedor para botones de inicio y altavoces */
+/* Contenedor para botones de inicio y reset */
 #console-ctn-5 {
     /* border: 1px solid red; */
     height: 15vh;
     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Contenedor para el extremo inferior de la consola */
+#console-ctn-6 {
+    /* border: 1px solid red; */
+    height: 7vh;
+    display: flex;
     align-items: flex-end;
     justify-content: flex-end;
-    padding-bottom: 50px;
-    padding-right: 50px;
+    padding-right: 20px;
 }
 
 /**
  * 02. ZONA SUPERIOR
- * Incluye los estilos usados para replicar la parte superior
- * de la consola.
+ * Incluye los estilos para replicar la parte superior de la consola
  * -------------------------------------------------------------------
  */
 
 #on-off-container {
     width: 70px;
-    height: 12px;
-    border: 2px solid #b4b4b4;
+    height: 14px;
+    border: 1px solid #b4b4b4;
     border-radius: 8px 8px 8px 8px;
-    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px 0px inset;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-left: 35px;
+    margin-top: 4px;
 }
 
 #on-off-container p {
@@ -82,7 +94,7 @@
     letter-spacing: 1px;
 }
 
-#triangulo-left {
+.triangulo-left {
     margin: 0 auto;
     width: 0;
     height: 0;
@@ -92,7 +104,7 @@
     border-bottom: 4px solid transparent;
 }
 
-#triangulo-right {
+.triangulo-right {
     margin: 0 auto;
     width: 0;
     height: 0;
@@ -111,8 +123,8 @@
 
 /**
  * 03. ZONA DE LA PANTALLA
- * Incluye estilos para represetar la pantalla de la consola,
- * como son el led indicador de bateria y la propia pantalla verde.
+ * Incluye estilos para la pantalla de la consola, como son el led
+ * de bateria y la pantalla verde.
  * -------------------------------------------------------------------
  */
 
@@ -218,8 +230,7 @@
 
 /**
  * 04. ZONA BAJO LA PANTALLA
- * Incluye estilos para represetar la marca de Nintendo y
- * el modelo con su simbolo de marca registrada.
+ * Incluye estilos de lamarca de Nintendo y el modelo.
  * -------------------------------------------------------------------
  */
 
@@ -247,25 +258,187 @@
 
 /**
  * 05. ZONA DE CONTROLES DE JUEGO
- * Incluye estilos para represetar las teclas de dirección
- * y botónes de juego.
+ * Incluye estilos de teclas de dirección y botónes de juego.
  * -------------------------------------------------------------------
  */
 
-
-/**
- * 06. ZONA BAJO LA PANTALLA
- * Incluye estilos para represetar las ranuras del altavoz y
- * elas teclas de SELECT y START.
- * -------------------------------------------------------------------
- */
-
-/* Ranuras para dejar salir el audio de la consola */
-.slot-1 {
-    width: 10px;
-    height: 90px;
-    background-color: #e1e1e1;
-    border-radius: 50px 50px 50px 50px;
-    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+/* Contenedor para botones de movimiento */
+.arrow-buttons-box {
+    width: 110px;
+    height: 110px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content:center;
 }
 
+/* Endidura alrededor del control de movimiento */
+.arrow-buttons-border {
+    width: 110px;
+    height: 110px;
+    border: 1px solid #b4b4b4;
+    border-radius: 50%;
+    box-shadow: grey 4px 4px 8px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+/* Barra de movimiento vertical */
+.arrow-up-down {
+    width: 20px;
+    height: 85px;
+    background-color: #968895;
+    border-radius: 5px 5px 5px 5px;
+    /* box-shadow: inset 3px 3px 3px rgba(255,255,255,.7), inset -2px -2px 3px rgba(0,0,0,.1), 2px 2px 10px rgba(0,0,0,.1); */
+    position: fixed;
+}
+
+/* Barra de movimiento horizontal */
+.arrow-left-right {
+    width: 85px;
+    height: 20px;
+    background-color: #968895;
+    border-radius: 5px 5px 5px 5px;
+    /* box-shadow: inset 3px 3px 3px rgba(255,255,255,.7), inset -2px -2px 3px rgba(0,0,0,.1), 2px 2px 10px rgba(0,0,0,.1); */
+    position: fixed;
+}
+
+/* Contenedor para botones de acción y etiquetas */
+.action-buttons-box {
+    width: 120px;
+    height: 80px;
+    border: none;
+    transform: rotate(-25deg);
+}
+
+/* Formato para la etiqueta de los botones de acción */
+.action-buttons-box p {
+    font-family: nintendoFont;
+    font-size: 12px;
+    text-align: center;
+    word-spacing: 45px;
+    color: #231a84;
+    margin-top: 5px;
+}
+
+/* Endidura alrededor de los botones */
+.action-button-border {
+    width: 120px;
+    height: 55px;
+    border: 1px solid #b4b4b4;
+    border-radius: 30px 30px 30px 30px;
+    box-shadow: grey 4px 4px 8px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+
+/* Botón interior bordes ovalados */
+.action-button {
+    width: 40px;
+    height: 40px;
+    background-color: #b1316e;
+    border: 1px solid gray;
+    border-radius: 50%;
+    box-shadow: inset 3px 3px 3px rgba(255,255,255,.7), inset -2px -2px 3px rgba(0,0,0,.1), 2px 2px 10px rgba(0,0,0,.1);
+}
+
+/**
+ * 06. ZONA DE BOTONES DE INICIO
+ * Incluye estilos para represetar los botones de SELECT y START
+ * -------------------------------------------------------------------
+ */
+
+/* Contenedor para el botón SELECT y su etiqueta */
+.button-box {
+    width: 80px;
+    height: 52px;
+    border: none;
+    transform: rotate(-25deg);
+}
+
+/* Formato para la etiqueta del botón */
+.button-box p {
+    font-family: nintendoFont;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #231a84;
+    margin-top: 5px;
+}
+
+/* Endidura alrededor del botón */
+.out-button {
+    width: 70px;
+    height: 20px;
+    border: 1px solid #b4b4b4;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: grey 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Botón interior bordes ovalados */
+.in-button {
+    width: 54px;
+    height: 12px;
+    background-color: #968895;
+    border: 1px solid #b4b4b4;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: inset 3px 3px 3px rgba(255,255,255,.7), inset -2px -2px 3px rgba(0,0,0,.1), 2px 2px 10px rgba(0,0,0,.1);
+}
+
+/**
+ * 06. BORDE INFERIOR DE LA CONSOLA
+ * Incluye estilos para represetar las ranuras del altavoz y
+ * el conector auticulares
+ * -------------------------------------------------------------------
+ */
+
+/* Conector de salida de audio (auriculares) */
+#headphone-container {
+    width: 65px;
+    height: 15px;
+    border: 1px solid #b4b4b4;
+    border-radius: 8px 8px 8px 8px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px 0px inset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+#headphone-container img {
+    opacity: 0.3;
+}
+
+#headphone-container p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 8px;
+    color: #b4b4b4;
+    letter-spacing: 1px;
+}
+
+/* Bloqyue de ranuras de audio */
+#slot-container {
+    width: 95px;
+    height: 60px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transform: rotate(-35deg);
+    margin-bottom: 30px;
+    margin-left: 50px;
+}
+
+/* Ranura */
+.slot {
+    width: 8px;
+    height: 60px;
+    border: 1px solid #b4b4b4;
+    border-radius: 8px 8px 8px 8px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px 0px inset;
+}

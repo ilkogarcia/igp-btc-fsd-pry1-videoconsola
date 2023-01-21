@@ -8,9 +8,12 @@
     <link rel="stylesheet" type="text/css" href="../css/page.css">
     <link rel="stylesheet" type="text/css" href="../css/gameboy.css">
     <link rel="icon" type="image/png" href="../img/favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
+    <!-- Contenedor principal de toda la página -->
     <div class="container">
+        <!-- Panel de información a la izquierda de la pantalla -->
         <div class="leftpanel">
             <h1>Game Boy</h1>
             <p>La Game Boy es una videoconsola portátil desarrollada y comercializada por Nintendo, lanzada por primera vez en Japón y América del Norte en 1989, y en Europa un año después9​. Perteneció a la línea de consolas Game Boy, siendo esta la primera de la serie.</p>
@@ -25,16 +28,19 @@
             <p>Más información: <a class="stdLink" href="https://es.wikipedia.org/wiki/Game_Boy" target="_blank">Wikipedia</a>, <a class="stdLink" href="https://www.nintendo.com/" target="_blank">Página oficial de Nintendo</a></p>
             <p><img src="../img/nintendo-logo.png" alt="Nintendo" width="200px"></p>
         </div>
+        <!-- Panel para mostrar la demo de la consola -->
         <div class="rightpanel">
             <div id="console-container">
+                <!-- Borde superior -->
                 <div id="console-ctn-1">
                     <div id="on-off-container">
-                        <div id="triangulo-left"></div>
+                        <div class="triangulo-left"></div>
                         <p>OFF·ON</p>
-                        <div id="triangulo-right"></div>
+                        <div class="triangulo-right"></div>
                     </div>
-                    <hr class="hr-1">                  
+                    <hr class="hr-1">
                 </div>
+                <!-- Zona de la pantalla -->
                 <div id="console-ctn-2">
                     <div id="screen-container">
                         <div id="screen-ctn-1">
@@ -51,13 +57,52 @@
                         <div id="screen-ctn-3"></div>
                     </div>
                 </div>
+                <!-- Zona de la marca y modelo -->
                 <div id="console-ctn-3">
                     <div id="console-brand">Nintendo</div>
                     <div id="console-modelname">GAME BOY<sub>&trade;</sub></div>
                 </div>
-                <div id="console-ctn-4"></div>
+                <!-- Zona de botones de movimiento y acción -->
+                <div id="console-ctn-4">
+                    <div class="arrow-buttons-box">
+                        <div class="arrow-buttons-border">
+                            <div class="arrow-up-down"></div>
+                            <div class="arrow-left-right"></div>
+                        </div>
+                    </div>
+                    <div class="action-buttons-box">
+                        <div class="action-button-border">
+                            <div class="action-button"></div>
+                            <div class="action-button"></div>
+                        </div>
+                        <p>B A</p>
+                    </div>
+                </div>
+                <!-- Zona de los botones de inicio y selección -->
                 <div id="console-ctn-5">
-                    <div class="slot-1"></div>
+                    <div class="button-box">
+                        <div class="out-button"><div class="in-button"></div></div>
+                        <p>SELECT</p>
+                    </div>
+                    <div class="button-box">
+                        <div class="out-button"><div class="in-button"></div></div>
+                        <p>START</p>
+                    </div>
+                </div>
+                <!-- Borde inferior -->
+                <div id="console-ctn-6">
+                    <div id="headphone-container">
+                        <img src="../img/headphones.svg" alt="headphone" width="8px">
+                        <p>PHONES</p>
+                    </div>
+                    <div id="slot-container">
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                        <div class="slot"></div>
+                    </div>
                 </div>
             </div>
         </div>

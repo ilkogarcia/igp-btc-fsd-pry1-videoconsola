@@ -11,7 +11,7 @@ URL: https://ilkogarcia.github.io/igp-btc-fsd-pry1-videoconsola/
 3. [Instalación](#install)
 
 ## <a name="info"></a>Información general
-Algunos de los retos a los que nos hemos enfrentado durante el desarrollo de la aplicación han sido:.... En el futuro se pretende agregar otras funcionalidades como son:...
+Este proyecto puede considerare como un MVP y se encuentra aún en desarrollo. Durante el desarrollo de la aplicación hemos tenido algunos retos, como conseguir rotar los elementos o crear efectos de profundidad. Esto último no se ha conseguido hacer de modo realista y aún tiene margen para mejorar. En futuras versiones iremos mejorando el aspecto visual para que sea más próximo al producto real. También queremos agregarle algunas acciones o animación en javascript.
 
 ``Este proyecto se ha levado a cabo dentro del marco del Bootcamp FullStack Developer realizado en Valencia, entre enero y marzo de 2023.``
 
@@ -30,6 +30,3 @@ $ code .
 ```
 
 Para utilizar la aplicación necesitarás desplegar la estructura de carpetas y archivos del proyecto en un servidor web instalado en local o en un servidor. 
-
-
-
