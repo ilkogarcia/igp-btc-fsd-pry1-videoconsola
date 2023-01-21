@@ -1,10 +1,12 @@
-@font-face {
-    font-family: nintendoFont;
-    src: url(../assets/Pretendo.ttf);
-  }
+/**
+ * 01. CONTENEDORES PRINCIPALES
+ * Incluye el contenedor principal de la consola y
+ * los contenedores horiontales en que se divide.
+ * -------------------------------------------------------------------
+ */
 
-  /* Contenedor global de la consola */
-#console {
+ /* Contenedor de toda la consola */
+#console-container {
     width: 27vw;
     height: 90vh;
     background-color: #e1e1e1;
@@ -12,85 +14,190 @@
     box-shadow: inset 0 5px 8px rgba(0,0,0,0.16), 0 4px 6px rgba(0,0,0,0.45);
 }
 
-/* Parte superior donde se encuentra el botón de encendido */
-#console-ly-0-1 {
+/* Contenedor de elementos del borde superior sobre la pantalla */
+#console-ctn-1 {
     /* border: 1px solid #ff0000; */
-    height: 5vh;
+    height: 7vh;
 }
 
-/* Contenedor para la pantalla de la consola */
-#console-ly-0-2 {
+/* Contenedor para la pantalla de cristal */
+#console-ctn-2 {
     /* border: 1px solid #ff0000; */
     height: 35vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 10px;
 }
 
-/* Borde exterior de la pantalla */
-#console-screen {
+/* Contenedor para marca y modelo */
+#console-ctn-3 {
+    /* border: 1px solid #ff0000; */
+    height: 5vh;
+    display: flex;
+    align-items: baseline; 
+    justify-content: left;
+    padding-left: 25px;
+}
+
+/* Contenedor para los controles de juego */
+#console-ctn-4 {
+    /* border: 1px solid red; */
+    height: 20vh;
+}
+
+/* Contenedor para botones de inicio y altavoces */
+#console-ctn-5 {
+    /* border: 1px solid red; */
+    height: 15vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-bottom: 50px;
+    padding-right: 50px;
+}
+
+/**
+ * 02. ZONA SUPERIOR
+ * Incluye los estilos usados para replicar la parte superior
+ * de la consola.
+ * -------------------------------------------------------------------
+ */
+
+#on-off-container {
+    width: 70px;
+    height: 12px;
+    border: 2px solid #b4b4b4;
+    border-radius: 8px 8px 8px 8px;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 35px;
+}
+
+#on-off-container p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 8px;
+    color: #b4b4b4;
+    letter-spacing: 1px;
+}
+
+#triangulo-left {
+    margin: 0 auto;
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-top: 4px solid transparent;
+    border-right: 4px solid #b4b4b4;
+    border-bottom: 4px solid transparent;
+}
+
+#triangulo-right {
+    margin: 0 auto;
+    width: 0;
+    height: 0;
+    border-left: 4px solid #b4b4b4;
+    border-top: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+}
+
+.hr-1 {
+    border:none;
+    width: 100%;
+    border-top: 1px solid lightgray;
+    box-shadow: inset 0 3px 5px -5px #b4b4b4;
+}
+
+/**
+ * 03. ZONA DE LA PANTALLA
+ * Incluye estilos para represetar la pantalla de la consola,
+ * como son el led indicador de bateria y la propia pantalla verde.
+ * -------------------------------------------------------------------
+ */
+
+#screen-container {
     width: 24vw;
     height: 34vh;
-    border: 1px solid rgba(0, 0, 0, 0.5);
+    border: 2px solid rgba(0, 0, 0, 0.5);
     background: rgb(160,152,175);
     background: linear-gradient(90deg, rgba(160,152,175,1) 0%, rgba(126,119,141,1) 50%, rgba(160,152,175,1) 100%);
-    border-radius: 20px 20px 90px 20px;
+    border-radius: 15px 15px 45px 15px;
     box-shadow: inset 0px 0px 5px 1px #333333;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Zona superior de la pantalla con texto en blanco */
+#screen-ctn-1 {
+    /* border: 1px solid #5100ff; */
+    width: 24vw;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Caja para las líneas dobles de colores a la izquierda */
+#screen-ctn-1-box1 {
+    /* border: 1px solid #ffbb00; */
+    width: 7vw;
+    height: 0.5vh;
+    border-top: 3px solid #7a2f61;
+    padding-top: 1px;
+    border-bottom: 3px solid #231a84;
+    padding-bottom: 1px;
+}
+
+/* Caja para la línea de texto en el centro*/
+#screen-ctn-1-box2 {
+    /* border: 1px solid #ffbb00; */
+    width: 11vw;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#screen-ctn-1-box2 p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 10px;
-    letter-spacing: 1px;
+    font-size: 8px;
     color: #fff;
 }
 
-/* Zona superior de la pantalla */
-#screen-top {
-    /* border: 1px solid #ff0000; */
-    width: 100%;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content:space-evenly;
-
-}
-
-/* Estilos para dibujar las líneas de colores en la parte superior */
-.line-1 {
-    width: 120px;
+/* Caja para las líneas dobles de colores a la derecha */
+#screen-ctn-1-box3 {
+    /* border: 1px solid #ffbb00; */
+    width: 3vw;
+    height: 0.5vh;
     border-top: 3px solid #7a2f61;
-    padding-top: 2px;
+    padding-top: 1px;
     border-bottom: 3px solid #231a84;
-    padding-bottom: 2px;
+    padding-bottom: 1px;
 }
 
-.line-2 {
-    width: 50px;
-    border-top: 3px solid #7a2f61;
-    padding-top: 2px;
-    border-bottom: 3px solid #231a84;
-    padding-bottom: 2px;
-}
-
-/* Zona del led indicador de bateria */
-#screen-left{
-    /* border: 1px solid #ff0000; */
-    width: 65px;
-    height: 200px;
-    float: left;
+/* Zona donde se ubica el led indicador de bateria */
+#screen-ctn-2{
+    /* border: 1px solid #5100ff; */
+    width: 5vw;
+    height: 10vh;
     display: flex;
     justify-content: center;
-    padding-top: 60px;
+    padding-top: 30px;
 }
 
+/* Caja para colocar el led y el texto */
 .led-box {
     height: 30px;
 }
 
+/* Parrafo de texto bajo el led de la bateria */
 .led-box p {
     font-size: 10px;
     text-align: center;
 }
 
+/* Led de color verde indicando bateria cargada */
 .led-ON {
     margin: 0 auto;
     width: 18px;
@@ -101,24 +208,25 @@
 }
 
 /* Zona del cristal verde */
-#screen-right {
-    /* border: 1px solid #ff0000; */
-    width: 240px;
-    height: 200px;
+#screen-ctn-3 {
+    /* border: 1px solid #5100ff; */
+    width: 16vw;
+    height: 23vh;
     background: rgb(94,140,70);
     background: radial-gradient(circle, rgba(94,140,70,1) 0%, rgba(125,180,82,1) 93%, rgba(94,140,70,1) 100%);
-    box-shadow: inset -2px 2px 8px 6px rgba(0,0,0,0.68);
-    float: left;
-}
+    box-shadow: inset -2px 2px 8px 6px rgba(0,0,0,0.68);}
 
-/* Contenedor para la marca y modelo de la consola */
-#console-ly-0-3 {
-    /* border: 1px solid #ff0000; */
-    height: 4vh;
-    display: flex;
-    align-items: baseline;
-    justify-content: left;
-    padding-left: 25px;
+/**
+ * 04. ZONA BAJO LA PANTALLA
+ * Incluye estilos para represetar la marca de Nintendo y
+ * el modelo con su simbolo de marca registrada.
+ * -------------------------------------------------------------------
+ */
+
+ /* Fuente tipofráfica que imita el logotipo de nintendo */
+@font-face {
+    font-family: nintendoFont;
+    src: url(../assets/Pretendo.ttf);
 }
 
 /* Marca o logotipo */
@@ -137,14 +245,27 @@
     padding-left: 2px;
 }
 
-/* Contenedor para los controles principales */
-#console-ly-0-4 {
-    /* border: 1px solid red; */
-    height: 25vh;
+/**
+ * 05. ZONA DE CONTROLES DE JUEGO
+ * Incluye estilos para represetar las teclas de dirección
+ * y botónes de juego.
+ * -------------------------------------------------------------------
+ */
+
+
+/**
+ * 06. ZONA BAJO LA PANTALLA
+ * Incluye estilos para represetar las ranuras del altavoz y
+ * elas teclas de SELECT y START.
+ * -------------------------------------------------------------------
+ */
+
+/* Ranuras para dejar salir el audio de la consola */
+.slot-1 {
+    width: 10px;
+    height: 90px;
+    background-color: #e1e1e1;
+    border-radius: 50px 50px 50px 50px;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }
 
-/* Contenedor para los elementos de la parte inferior */
-#console-ly-0-5 {
-    /* border: 1px solid red; */
-    height: 20vh;
-}

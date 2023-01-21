@@ -2,7 +2,7 @@ body {
     height: 100vh;
     margin: 0;
     font-family: system-ui,sans-serif;
-    font-size: 18px;
+    font-size: 15px;
 }
 
 h1 {
@@ -45,5 +45,6 @@ ul {
     background-color: whitesmoke;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items:flex-start;
+    padding: 20px 0px;
 }
