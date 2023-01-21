@@ -9,6 +9,7 @@ URL: https://ilkogarcia.github.io/igp-btc-fsd-pry1-videoconsola/
 1. [Información general](#info)
 2. [Tecnologías](#tech)
 3. [Instalación](#install)
+3. [Utilización](#use)
 
 ## <a name="info"></a>Información general
 Este proyecto puede considerare como un MVP y se encuentra aún en desarrollo. Durante el desarrollo de la aplicación hemos tenido algunos retos, como conseguir rotar los elementos o crear efectos de profundidad. Esto último no se ha conseguido hacer de modo realista y aún tiene margen para mejorar. En futuras versiones iremos mejorando el aspecto visual para que sea más próximo al producto real. También queremos agregarle algunas acciones o animación en javascript.
@@ -29,4 +30,8 @@ $ cd ../path/to/the/file
 $ code .
 ```
 
+## <a name="use"></a>Utilización
 Para utilizar la aplicación necesitarás desplegar la estructura de carpetas y archivos del proyecto en un servidor web instalado en local o en un servidor. 
+
+a. Haciendo clic sobre los botones On/Off en la parte superior se puede cambiar el color del led de bateria.
+b. Al pasar el ratón por encima de la pantalla verde se muestra la imagen de un juego.

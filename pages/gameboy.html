@@ -35,7 +35,7 @@
                 <div id="console-ctn-1">
                     <div id="on-off-container">
                         <div class="triangulo-left"></div>
-                        <p>OFF·ON</p>
+                        <p><a href="javascript:gameboyOff();">OFF</a>·<a href="javascript:gameboyOn();">ON</a></p>
                         <div class="triangulo-right"></div>
                     </div>
                     <hr class="hr-1">
@@ -49,8 +49,8 @@
                             <div id="screen-ctn-1-box3"></div>
                         </div>
                         <div id="screen-ctn-2">
-                            <div class="led-box">
-                                <div class="led-ON"></div>
+                            <div id="led-box">
+                                <div id="led-ON"></div>
                                 <p>BATTERY</p>
                             </div>
                         </div>
@@ -107,5 +107,6 @@
             </div>
         </div>
     </div>
+    <script src="../js/gameboy.js"></script>
 </body>
 </html>
