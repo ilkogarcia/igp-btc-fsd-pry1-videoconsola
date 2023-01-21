@@ -33,5 +33,5 @@ $ code .
 ## <a name="use"></a>Utilización
 Para utilizar la aplicación necesitarás desplegar la estructura de carpetas y archivos del proyecto en un servidor web instalado en local o en un servidor. 
 
-a. Haciendo clic sobre los botones On/Off en la parte superior se puede cambiar el color del led de bateria.
-b. Al pasar el ratón por encima de la pantalla verde se muestra la imagen de un juego.
+- Haciendo clic sobre los botones On/Off en la parte superior se puede cambiar el color del led de bateria.
+- Al pasar el ratón por encima de la pantalla verde se muestra la imagen de un juego.
