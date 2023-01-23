@@ -1,3 +1,10 @@
+/**
+ * Estilos de maquetacion de la página global con estilos para 
+ * dividir la pantalla en un panel a la izquierda que servira 
+ * para la información y un panel de la derecha para la consola.
+ * -------------------------------------------------------------------
+ */
+
 body {
     height: 100vh;
     margin: 0;

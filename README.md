@@ -20,6 +20,7 @@ Este proyecto puede considerare como un MVP y se encuentra aún en desarrollo. D
 Las tecnologías utilizadas en el desarrollo de la aplicación son:
 * [HTML5](https://developer.mozilla.org/en-US/docs/Glossary/HTML5)
 * [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
+* [Javascript](https://developer.mozilla.org/es/docs/Web/JavaScript)
 
 ## <a name="install"></a>Instalación
 Para descargar el proyecto en tu entorno de desarrollo sigue las instrucciones siguientes:
